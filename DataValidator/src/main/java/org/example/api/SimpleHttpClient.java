@@ -16,7 +16,7 @@ public class SimpleHttpClient {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(URL))
                 .header("Content-Type", "application/json")
-                .header("Referer", "com.opendatahub.examples.java")
+                .header("Referer", "com./opendatahub.examples.java")
                 .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
